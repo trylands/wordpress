@@ -155,6 +155,6 @@ when 'redhat', 'centos', 'scientific', 'fedora', 'suse', 'amazon', 'oracle'
 	webserver_name = 'httpd'
 end
 
-execute "disable default webiste" do
+execute "disable default website" do
   command "service #{webserver_name} reload"
 end
