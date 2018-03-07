@@ -145,7 +145,7 @@ web_app "wordpress" do
   server_aliases node['wordpress']['server_aliases']
 end
 
-execute "disable default webiste" do
+execute "disable default website" do
   command "/usr/sbin/a2dissite 000-default.conf"
 end
 
